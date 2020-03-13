@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import SkiDayCounter from "./components/SkiDayCounter";
+import sampleData from "./data/sampleData";
 
 function App() {
   let skiData = {
@@ -9,6 +10,8 @@ function App() {
     backCountry: 10,
     goal: 100
   };
+
+  const skiDays = sampleData.allSkiDays;
 
   return (
     <div className="App">
@@ -19,6 +22,7 @@ function App() {
           powder={skiData.powder}
           backCountry={skiData.backCountry}
           goal={skiData.goal}
+          skiDays={skiDays}
         />
       </header>
     </div>
