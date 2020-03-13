@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import SkiDayCounter from "./components/SkiDayCounter";
 import sampleData from "./data/sampleData";
+import SkiDayForm from "./components/SkiDayForm";
 
 function App() {
   let skiData = {
@@ -24,6 +25,7 @@ function App() {
           goal={skiData.goal}
           skiDays={skiDays}
         />
+        <SkiDayForm />
       </header>
     </div>
   );
