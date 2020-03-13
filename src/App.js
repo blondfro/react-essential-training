@@ -3,6 +3,7 @@ import "./App.css";
 import SkiDayCounter from "./components/SkiDayCounter";
 import sampleData from "./data/sampleData";
 import SkiDayForm from "./components/SkiDayForm";
+import Navigation from "./components/Navigation";
 
 function App() {
   let skiData = {
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         Ski Day Counter
+        <Navigation />
         <SkiDayCounter
           total={skiData.total}
           powder={skiData.powder}
